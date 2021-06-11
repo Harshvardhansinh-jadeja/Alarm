@@ -15,9 +15,21 @@ function setAlarm(e){
     alarmDate = new Date(alarm.value);
     console.log(`setting alarm for ${alarm.value}`);
     now = new Date();
+    
+    let success = document.getElementById('success');
+    let danger =  document.getElementById('danger');
 
     let timetoring = alarmDate - now ;
     console.log(timetoring);
+    if(timetoring>0){
+        success.classList.add('show');
+        // success.classList.add('alert-success');
+    }else{
+        danger.classList.add('show');
+        // danger.classList.add('alert-danger');
+    }
+
+
     if(timetoring>=0){
     setTimeout(() => {
         console.log("now ringing");
