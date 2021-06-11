@@ -2,7 +2,7 @@ console.log("hello ranjit");
 
 let set = document.getElementById('set').addEventListener('click',setAlarm);
 
-var audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+var audio = new Audio('http://hindi.pagalworld.icu/2009/Ajab%20Prem%20Ki%20Ghazab%20Kahani/Tera-Hone-Laga-Hoon-(pagalworldsongs.co.in).mp3');
 
 function ringBell(){
     audio.play();
